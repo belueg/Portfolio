@@ -1,0 +1,40 @@
+.projects__container{
+    display:grid;
+    height: auto;
+    grid-template: 120px 350px 350px 350px 350px/ 80px 1fr;
+    grid-template-areas: "deco pTitle"
+                         "deco project1"
+                         "deco project2"
+                         "deco project3"
+                         "deco project4";
+
+
+}
+.project__item{
+    border:2px solid violet;
+}
+
+.deco{
+    grid-area:deco;
+}
+
+.pTitle{
+    grid-area: pTitle;
+}
+
+.project1{
+    grid-area:project1;
+}
+
+.project2{
+    grid-area:project2;
+}
+
+.project3{
+    grid-area:project3;
+}
+
+.project4{
+    grid-area:project4;
+}
+

@@ -1,0 +1,25 @@
+.contact__container{
+    display:grid;
+    height: 100vh;
+    grid-template: 150px 1fr 50px/ 1fr;
+    grid-template-areas: "cTitle"
+                         "mainContact"
+                         "footerItem";
+
+}
+
+.contact__item{
+    border:2px solid blue;
+}
+
+.cTitle{
+    grid-area: cTitle;
+}
+
+.mainContact{
+    grid-area:mainContact;
+}
+
+.footerItem{
+    grid-area:footerItem;
+}
