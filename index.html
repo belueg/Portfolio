@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./styles/styles.css">    
+    <link rel="icon" type="image/png" href="./images/bytesize_portfolio.png">
+    <link rel="stylesheet" href="./styles/styles.css">    
 <title>Portfolio</title>
 </head>
 <body>
+    <div class="container" > 
     <section id="hero">
         <div class="hero__container">
          <div class="hero__item decor"></div>
@@ -33,7 +35,15 @@
          </div>
          <div class="hero__item invitation">
              <div class="hero__invitation-container">
+ 
+<p class="hero__text">I’ve been working in some 
+    Front End projects, I’d like to share 
+    them with you!</p>
+ 
 
+ <div class="hero__img">
+<img src="images/mirage-message-sent.png" width="466px" height="389px" alt="paper illustration">
+ </div>
              </div>
          </div>
         </div>
@@ -43,21 +53,90 @@
 
         <div class="projects__container">
             <div class="project__item deco"></div>
-            <div class="project__item  pTitle"></div>
-            <div class="project__item project1"></div>
-            <div class="project__item project2"></div>
-            <div class="project__item project3 test"></div>
-            <div class="project__item project4"></div>
+            <div class="project__item  pTitle">
+             <div class="project__titleContainer">
+                <h2 class="project__mainTitle">Some of my recent works</h2>
+
+             </div>
+            </div>
+            <div class="project__item project1 project__boxContainer">
+                <div class="project__box"> 
+                    <div class="project__info">
+                        <h5 class="project__title">HealthConf - Print your Badge</h5>
+                        <p class="project__description"> HealthConf’s attendees need to 
+                            manage their badges. This SPA is a tool for them to do it. </p>
+                            <p class="project__description">Tools: React Js,  CSS, Bootstrap </p>
+                        <button type="button" class="project__button"> See project </button>
+                    </div>
+                    <div class="project__img-container">
+                        <img src="./images/doctor.png"
+                         alt="HealthConf "
+                         width="260"
+                         height="250"
+                         >
+                    </div>
+                </div>
+            </div>
+            <div class="project__item project2 project__boxContainer">
+                <div class="project__box"> 
+                    <div class="project__img-container">
+                        <img src="./images/paw.png"
+                         alt=" pets"
+                         width="160"
+                         height="150"
+                         >
+                    </div>
+                    <div class="project__info">
+                        <h5 class="project__title">+Mascotas -  I think it’s better to adopt, isn't it?
+                        </h5>
+                        <p class="project__description"> 
+                            This website is made with the idea to get in 
+                            touch people with a non profit organization to find a pet.   </p>
+                            <p class="project__description">Tools: Vanilla JS,  CSS, HTML </p>
+                        <button type="button" class="project__button"> See project </button>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="project__item project3 project__boxContainer">
+                <div class="project__box"> 
+                    <div class="project__info">
+                        <h5 class="project__title">Pizzas Gourmet -  e-commerce / Front End
+                        </h5>
+                        <p class="project__description"> Here you can choose your favorite flavors and add them to the cart! 
+                            There you’ll see the total and  all your selected options.  </p>
+                            <p class="project__description"> Tools: Vanilla Js,  CSS, SASS </p>
+                        <button type="button" class="project__button"> See project </button>
+                    </div>
+                    <div class="project__img-container">
+                        <img src="./images/pizza.png"
+                         alt="HealthConf "
+                         width="260"
+                         height="250"
+                         >
+                    </div>
+                </div>
+            </div>
+            <div class="project__item project4 project__boxContainer">
+              <img src="images/mirage-list-is-empty.png" width="300" alt="yoga sheet">
+              <h3 class="project__text">
+                Well, this portfolio is also part of my recent work, I designed it with
+                 Figma <span>and  made it with love. </span>
+              </h3>
+            </div>
 
            </div>
     </section>
 
     <section id="contact">
         <div class="contact__container">
-            <div class="contact__item cTitle"></div>
-            <div class="contact__item  mainContact"></div>
-            <div class="contact__item footerItem"></div>
-           </div>
+            <div class="contact__item cTitle"> <h2 class="contact__title">You can find me here!</h2></div>
+                <div class="contact__item  mainContact ">
+                </div>
+                <div class="contact__item footerItem"></div>
+               </div>
+          
     </section>
+</div>
 </body>
 </html>

@@ -1,3 +1,6 @@
+#hero{
+    min-height: fit-content;
+}
 .hero__greeting-container{
     width: 100%;
     height: 100%;
@@ -14,5 +17,13 @@
     }
 }
 
-.hero__greeting-container{
+.hero__invitation-container{
+    padding:10px;
+    @include flexCenter();
+    .hero__text  {
+        font-family: monospace;
+        font-size: 2.3em;
+        width: 50%;
+        text-align: right;
+    }
 }

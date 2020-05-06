@@ -1,7 +1,7 @@
 .hero__container{
     display:grid;
-    height: 100vh;
-    grid-template: 80px 1fr 1fr / 80px 1fr;
+    height: auto;
+    grid-template: 80px auto auto / 80px 1fr;
     grid-template-areas: "decor navbar"
                          "decor greeting"
                          "decor invitation";
@@ -9,7 +9,7 @@
 }
 
 .hero__item{
-    border:2px solid green;
+    // border:2px solid green;
 }
 .decor{
     grid-area:decor;

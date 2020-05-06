@@ -1,6 +1,6 @@
 .projects__container{
     display:grid;
-    height: auto;
+    height:auto ;
     grid-template: 120px 350px 350px 350px 350px/ 80px 1fr;
     grid-template-areas: "deco pTitle"
                          "deco project1"
@@ -10,9 +10,7 @@
 
 
 }
-.project__item{
-    border:2px solid violet;
-}
+
 
 .deco{
     grid-area:deco;
