@@ -1,16 +1,13 @@
 .contact__container{
     display:grid;
     height: 100vh;
-    grid-template: 100px 1fr 50px/ 1fr;
+    grid-template: 100px 1fr / 1fr;
     grid-template-areas: "cTitle"
-                         "mainContact"
-                         "footerItem";
+                         "mainContact";
 
 }
 
-.contact__item{
-    border:2px solid blue;
-}
+
 
 .cTitle{
     grid-area: cTitle;
@@ -20,6 +17,3 @@
     grid-area:mainContact;
 }
 
-.footerItem{
-    grid-area:footerItem;
-}

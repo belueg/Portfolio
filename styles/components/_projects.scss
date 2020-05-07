@@ -49,6 +49,10 @@
              font-weight: bold;
              border: none;
              margin-top: 5px;
+             &:focus {
+                outline: none;
+                box-shadow: none;
+              }
             }
         }
 

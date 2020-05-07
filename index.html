@@ -6,6 +6,8 @@
     <link rel="icon" type="image/png" href="./images/bytesize_portfolio.png">
     <link rel="stylesheet" href="./styles/styles.css">    
 <title>Portfolio</title>
+<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
 </head>
 <body>
     <div class="container" > 
@@ -66,7 +68,8 @@
                         <p class="project__description"> HealthConf’s attendees need to 
                             manage their badges. This SPA is a tool for them to do it. </p>
                             <p class="project__description">Tools: React Js,  CSS, Bootstrap </p>
-                        <button type="button" class="project__button"> See project </button>
+                       <a href="https://github.com/belueg/HealthConf-REACT" target="_blank"> 
+                        <button type="button" class="project__button"> See project </button></a>  
                     </div>
                     <div class="project__img-container">
                         <img src="./images/doctor.png"
@@ -93,7 +96,8 @@
                             This website is made with the idea to get in 
                             touch people with a non profit organization to find a pet.   </p>
                             <p class="project__description">Tools: Vanilla JS,  CSS, HTML </p>
-                        <button type="button" class="project__button"> See project </button>
+                        <a href="https://github.com/belueg/pets" target="_blank">
+                            <button type="button" class="project__button"> See project </button> </a>
                     </div>
                    
                 </div>
@@ -106,7 +110,9 @@
                         <p class="project__description"> Here you can choose your favorite flavors and add them to the cart! 
                             There you’ll see the total and  all your selected options.  </p>
                             <p class="project__description"> Tools: Vanilla Js,  CSS, SASS </p>
+                      <a href="https://pizzas-gourmet.web.app/" target="_blank">
                         <button type="button" class="project__button"> See project </button>
+                    </a>  
                     </div>
                     <div class="project__img-container">
                         <img src="./images/pizza.png"
@@ -130,13 +136,27 @@
 
     <section id="contact">
         <div class="contact__container">
-            <div class="contact__item cTitle"> <h2 class="contact__title">You can find me here!</h2></div>
-                <div class="contact__item  mainContact ">
+            <div class="contact__item cTitle contact__title-container"> 
+                <h2 class="contact__title">You can find me here!</h2></div>
+                <div class="contact__item  contact__mainContact ">
+                     <img src="images/Vector.jpg" class="contact__vector"  alt="vector"> 
+                     <div class="contact__icons">
+                        <a href="https://github.com/belueg" target="_blank"> <span class="iconify contact__icon" data-inline="false" data-icon="fa-brands:github"
+                         style="font-size: 81px;" > </span> </a>  
+                         <a href="https://www.linkedin.com/in/b%C3%A1rbara-bel%C3%A9n-gonz%C3%A1lez-a74639142/" target="_blank">
+                            <span class="iconify contact__icon" data-inline="false" data-icon="entypo-social:linkedin-with-circle" style="font-size: 83px;"></span>
+
+                        </a>
+                <a href="mailto:belg9412@gmail.com">  <span class="iconify contact__icon" data-inline="false" data-icon="heroicons:sm-mail-open" style="color: #0c0a0d; font-size: 95px;"><a href=""></a></span></a>       
+
+                     </div>
                 </div>
-                <div class="contact__item footerItem"></div>
                </div>
           
     </section>
+    <footer class="footer">
+        <p class="footer__text">The cute illustrations are from icons8 ~ Belueg 2020    </p>
+    </footer>
 </div>
 </body>
 </html>
