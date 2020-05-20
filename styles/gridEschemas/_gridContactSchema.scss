@@ -1,13 +1,17 @@
 .contact__container{
     display:grid;
     height: 100vh;
-    grid-template: 100px 1fr / 1fr;
-    grid-template-areas: "cTitle"
-                         "mainContact";
+    grid-template: 100px 1fr 60px / 80px 1fr;
+    grid-template-areas: " dec cTitle"
+                         " dec mainContact"
+                          "dec footer";
 
 }
 
 
+.dec{
+grid-area: dec;
+}
 
 .cTitle{
     grid-area: cTitle;
@@ -17,3 +21,6 @@
     grid-area:mainContact;
 }
 
+.footer{
+    grid-area:footer;
+}
