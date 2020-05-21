@@ -1,18 +1,43 @@
 .header{
-    @include flexCenter();
-    justify-content: flex-end;
     width: 100%;
-    height: 100%;
-    padding-right: 2%;
-    .header__item{
-    width: 100px;
-    font-weight: bold;
-list-style: none;
-        a{
-            display: inline-block;
-            text-decoration: none;
+    display: flex;
+    justify-content:flex-end ;
+    position: fixed;
+    height: 5rem;
+    z-index: 3;
+    background-color: white;
+    // box-shadow: rgba(0, 0, 0, 0.25) 0 2px 4px 0;
 
-               }
+    .header__list{
+        @include flexCenter();
+        justify-content: flex-end;
+        width: 60%;
+        height: 5rem;
+        padding-right: 2%;
+        margin: 0;
+        .header__item{
+            width: 100px;
+            font-weight: bold;
+            list-style: none;
+            a{
+                display: inline-block;
+                text-decoration: none;
+                
+                &:hover{
+                    color:  $greetingAndDecoColor;
+                }
+            }
+        }
+        
     }
-  
+}
+
+@media screen and (max-width:767px){
+.header{
+
+    .header__list{
+        width: 100%;
+    }
+}
+
 }

@@ -1,27 +1,29 @@
-.project__titleContainer{
-    width: 100%;
-    height: 120px;
-@include flexCenter();
-.project__mainTitle{
-    font-size: 2.4em;
-}
+.projects{
+    margin-top: 120px;
+    height: auto;
 
-}
-
-
-.project__boxContainer{
+    .project__titleContainer{
+        width: 100%;
+        height: 120px;
     @include flexCenter();
-        margin: 3rem;
-    .project__box{
-        @include flexCenter();
-        max-width: 700px;;
-        height: 250px;
-        background: #FFFFFF;
-        box-shadow: 0px 3px 4px 1px  rgba(0, 0, 0, 0.25);
-        backdrop-filter: blur(4px);
-        border-radius: 7px;
-        overflow: hidden;
+    .project__mainTitle{
+        font-size: 2.4em;
+    }}
 
+    .project__boxContainer{
+        @include flexCenter();
+            margin: 3rem;
+        .project__box{
+            @include flexCenter();
+            max-width: 700px;;
+            min-height: 250px;
+            background: #FFFFFF;
+            box-shadow: 0px 3px 4px 1px  rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(4px);
+            border-radius: 7px;
+            overflow: hidden;
+
+            
         .project__info{
             width: calc(100% - 260px);
             height: 100%;
@@ -51,85 +53,80 @@
              font-weight: bold;
              border: none;
              margin-top: 5px;
+             cursor: pointer;
              &:focus {
                 outline: none;
                 box-shadow: none;
               }
+
+              &:hover{
+                  background-color:  #2bb9b1;
+              }
+            }
+        } 
+
+    }
+         
+    }}
+
+
+@media screen and (max-width:726px){
+
+.projects{
+    margin-top: 0;
+    .project__boxContainer{
+        .project__box{
+
+            .project__img-container{
+                margin: 20px;
+            }
+            .project__info{
+                padding: 20px 5px 20px 5px;
             }
         }
+    }
+}
 
-        .project__img-container{
-            display: inline-block;
-            @include flexCenter();
-            margin: 0;
-            width: 260px;
-            height: 100%;
-            overflow: hidden;
-            border-radius: 7px;
-            img{
-                display: inline-block;
-                margin: 0;
-                z-index: -1;
-                // object-fit: contain;
+}
+
+@media screen and (max-width:535px){
+    .projects{
+
+        .project__titleContainer{
+           
+        .project__mainTitle{
+            font-size: 1.7em;
+        }}
+        margin-top: 0;
+        .project__boxContainer{
+            .project__box{
+                padding: 1.5rem;
                 position: relative;
-                object-fit: fill;
-                width:160px;
-                height: 150px;
+                .project__info{
+                    width: 100%;
+                }
+                .project__img-container{
+                    margin: 20px;
+                    position: absolute;
+                width: 100%;
+                text-align: right;
+                padding: 50px;
+
+                img{
+                    opacity: 0.1;
+                }
+                }
+                .project__info{
+                    padding: 20px 5px 20px 5px;
+                }
             }
+            
         }
     }
+    
+    .project__illustration{
+    max-width: 150px;
+    height: auto;
 }
-
-.project__boxContainer:last-child{
-    @include flexCenter();
-    padding: 20px 70px;
-
-    .project__text{
-        font-family: monospace;
-        padding: 10px 70px;
-        font-size:2.2em;
-        font-weight: normal;
-        line-height: 45px;
-        text-align: right;
-        width: 750px;
-        span{
-            color:$withLove;
-            font-family: monospace;
-        }
-    }
-}
-
-@media screen and (max-width: 1300px){
-
-    .project__boxContainer{
-        max-width: 900px;
-    }
-
-}
-
-
-
-@media screen and (max-width: 900px){
-
-    .project__boxContainer{
-        width: auto;
-    }
-
-}
-
-@media screen and (max-width: 800px){
-
-    .project__boxContainer{
-        height: auto;
-    .project__box{
-        display: flex;
-    flex-direction: column;
-    min-height: auto;
-    width: 500px;
-
-    .project__info{
-        width: 100%;
-    }
-    }
-}
+    
 }
