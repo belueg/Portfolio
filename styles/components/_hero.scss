@@ -6,7 +6,7 @@
 @include flexCenter();
 justify-content: flex-start;
     .hero__title{
-        font-size: 3.5rem;
+        font-size: 4rem;
         margin:0;
         margin-left: 5%;
         span{
@@ -34,11 +34,24 @@ justify-content: flex-start;
          img {
              max-width: 100%;
              height: auto;
+             animation: rotateImg 0.5s 1 1s linear;
+
          }
+
      }
 
     }
 }
+
+@keyframes rotateImg{
+    0%{
+        transform: rotate(0deg);
+        }
+    99%{
+        transform: rotate(360deg);
+        }
+}
+
 
 @media screen and (max-width:1000px){
     .hero{
@@ -76,8 +89,37 @@ justify-content: flex-start;
             }
        
            }
+    }
+    
+}
 
+@media screen and(max-width: 414px){
+
+    .hero{
+    
+        .hero__greeting-container{
+     align-items: flex-end;
+        .hero__title{
+            font-size: 2rem;
+            margin-top:2rem;
+            margin-left: 5%;
+        
+        } }
+        .hero__invitation-container{
+         
+            .hero__text  {
+                font-size: 1.8rem;
+              width: 90%;
+              margin-right: 2.3rem;
+            }
+        
+            .hero__img {
+                img {
+            display: none;
+                }
+            }
+       
+           }
     }
 
-     
 }

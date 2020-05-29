@@ -26,14 +26,27 @@
             margin-right:80px ;
             .contact__icon{
                 margin: 20px;
+                font-size: 81px;
             
                 &:hover{
                     opacity: 0.6;
+
+                    .small-icon{
+                        font-size: 81px;
+
+                        &:last-child span{
+                            font-size: 91px;
+                        }
+                    }
+
+             }
                 }
+
+
+               
             }
 
         }
-        
         
         .contact__form{
             height: 60%;
@@ -90,7 +103,7 @@
         
     }
 }}
-}
+
 
 @media screen and (max-width:975px){
  .contact{
@@ -115,6 +128,7 @@
     padding-left: 20px;
     height: 5em;   
     align-items: flex-end;
+    justify-content: center;
     .contact__title{
     margin-bottom: 0;
     font-size: 2.3rem;
@@ -124,7 +138,7 @@
     .contact__mainContact{
      
     .contact__icons{
-         
+         margin: auto;
         .contact__icon {
             max-width: 100%;
             height: auto ; 
@@ -137,3 +151,47 @@
 }
 }
     }}
+
+    @media screen and (max-width: 470px){
+        .contact{
+        
+                .contact__mainContact{      
+                .contact__form{
+                    height: 60%;
+                    max-width: 400px;   
+            }
+        }}
+        }
+
+ @media screen and (max-width: 414px){
+            .contact{
+            
+                    .contact__mainContact{
+                        
+                        .contact__icons{
+                            margin: 1.2em;
+                            margin-bottom: 0;
+                            .contact__icon{
+
+                                font-size: 50px;
+                              
+                                a span{
+                                    font-size: 1em;
+                                }
+                            }
+                
+                        }
+
+                        .contact__form{
+                            .contact__form-container{
+                                width: 380px;
+                            }
+                        }
+                         width: 100%;
+                        .contact__form{
+                        height: 60%;
+                 width: 60%;      
+        
+            }}
+            }
+        }

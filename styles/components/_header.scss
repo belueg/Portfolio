@@ -1,5 +1,6 @@
 .header{
     width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 2px 4px 0;
     display: flex;
     justify-content:flex-end ;
     position: fixed;
@@ -16,9 +17,10 @@
         padding-right: 2%;
         margin: 0;
         .header__item{
-            width: 100px;
+padding-right:80px ;
             font-weight: bold;
             list-style: none;
+            font-size: 1.5rem;
             a{
                 display: inline-block;
                 text-decoration: none;
@@ -39,5 +41,21 @@
         width: 100%;
     }
 }
+
+}
+
+@media screen and (max-width:414px){
+    .header{
+
+        .header__list{
+
+            justify-content: center;
+
+            .header__item{
+                padding-right:60px ;
+                font-size: 1rem;
+            }
+        }
+    }
 
 }

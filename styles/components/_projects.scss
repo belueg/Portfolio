@@ -22,7 +22,10 @@
             backdrop-filter: blur(4px);
             border-radius: 7px;
             overflow: hidden;
-
+            transition: transform .2s;
+      &:hover{
+        transform: scale(1.02); 
+      }
             
         .project__info{
             width: calc(100% - 260px);
@@ -70,11 +73,20 @@
     }}
 
 
+ 
+
+
 @media screen and (max-width:726px){
 
 .projects{
     margin-top: 0;
+
+    
+    .project4{
+        margin: 70px 30px;
+    }
     .project__boxContainer{
+
         .project__box{
 
             .project__img-container{
