@@ -141,3 +141,23 @@
 }
     
 }
+
+@media screen and (max-width:414px){
+    .projects{
+
+        .project__titleContainer{
+        height: 60px;
+        justify-content: flex-start;
+        padding-left: 15px;
+        }
+
+        .project__boxContainer{
+margin: 1rem
+        }
+
+        .project4{
+            margin: 50px 10px;
+        }
+        
+    }
+}

@@ -45,9 +45,13 @@ padding-right:80px ;
 }
 
 @media screen and (max-width:414px){
+
     .header{
 
+        height: 60px;
+
         .header__list{
+            height: inherit;
             padding: 0;
             justify-content: center;
 
