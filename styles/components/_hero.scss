@@ -67,7 +67,7 @@ justify-content: flex-start;
     .hero{
     
         .hero__greeting-container{
-     
+            align-items: flex-end;
         .hero__title{
             font-size: 2.8rem;
             margin:0;
@@ -98,7 +98,7 @@ justify-content: flex-start;
     .hero{
     
         .hero__greeting-container{
-     align-items: flex-end;
+
         .hero__title{
             font-size: 2rem;
             margin-top:2rem;

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./images/bytesize_portfolio.png">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.min.css">
     <script src="https://kit.fontawesome.com/bb606bdb8a.js" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <title>Portfolio</title>
@@ -14,8 +14,6 @@
 
 <body>
     <main class="main">
-
-
         <header class="header">
             <ul class="header__list">
                 <li class="header__item">
@@ -27,7 +25,6 @@
                 <li class="header__item">
                     <a href="#contact">Contact</a>
                 </li>
-
             </ul>
         </header>
 
@@ -40,7 +37,7 @@
             <div class="hero__invitation-container">
 
                 <p class="hero__text">I’ve been working in some
-                    Front End projects, I’d like to share
+                    web development projects, I’d like to share
                     them with you!</p>
 
 
@@ -50,7 +47,9 @@
             </div>
         </section>
     </main>
-
+    <div class="line">
+        <div class="main__line"></div>
+    </div>
     <section id="projects" class="projects">
         <div class="project__titleContainer">
             <h2 class="project__mainTitle">Some of my recent works</h2>
@@ -62,8 +61,8 @@
                     <h5 class="project__title">HealthConf - Print your Badge</h5>
                     <p class="project__description"> HealthConf’s attendees need to
                         manage their badges. This SPA is a tool for them to do it. </p>
-                    <p class="project__description">Tools: React Js, CSS, Bootstrap </p>
-                    <a href="https://github.com/belueg/HealthConf-REACT" target="_blank">
+                    <p class="project__description">Technologies: React Js, Ant Design </p>
+                    <a href="https://health-conf.web.app/" target="_blank">
                         <button type="button" class="project__button"> See project </button></a>
                 </div>
                 <div class="project__img-container">
@@ -74,16 +73,20 @@
         <div class="project__item project2 project__boxContainer">
             <div class="project__box">
                 <div class="project__img-container">
-                    <img src="./images/paw.png" alt=" pets" width="160" height="150">
+                    <img src="./images/pizza.png" alt="HealthConf " width="160" height="150">
+
                 </div>
                 <div class="project__info">
-                    <h5 class="project__title">+Mascotas - I think it’s better to adopt, isn't it?
+                    <h5 class="project__title">Pizzas Gourmet - e-commerce / Front End
                     </h5>
                     <p class="project__description">
-                        This website is made with the idea to get in
-                        touch people with a non profit organization to find a pet. </p>
-                    <p class="project__description">Tools: Vanilla JS, CSS, HTML </p>
-                    <a href="https://github.com/belueg/pets" target="_blank">
+                        Here you can choose your favorite flavors and add them to the
+                        cart!
+                        
+                        There you’ll see the total and all your selected options. 
+                         </p>
+                    <p class="project__description"> Technologies: Ejs, Passport, MongoDB, SASS </p>
+                    <a href="https://pizzas-gourmet.herokuapp.com/" target="_blank">
                         <button type="button" class="project__button"> See project </button> </a>
                 </div>
 
@@ -92,18 +95,23 @@
         <div class="project__item project3 project__boxContainer">
             <div class="project__box">
                 <div class="project__info">
-                    <h5 class="project__title">Pizzas Gourmet - e-commerce / Front End
+                    <h5 class="project__title">
+                        +Mascotas - I think it’s better to adopt, isn't it?
                     </h5>
-                    <p class="project__description"> Here you can choose your favorite flavors and add them to the
-                        cart!
-                        There you’ll see the total and all your selected options. </p>
-                    <p class="project__description"> Tools: Vanilla Js, CSS, SASS </p>
-                    <a href="https://pizzas-gourmet.web.app/" target="_blank">
+                    <p class="project__description">
+                        This website is made with the idea to get in
+                        touch people with a non profit organization to find a pet.
+                       </p>
+                    <p class="project__description">
+                        Technologies: Vanilla JS, CSS, HTML 
+                       </p>
+                    <a href="https://github.com/belueg/pets" target="_blank">
                         <button type="button" class="project__button"> See project </button>
                     </a>
                 </div>
                 <div class="project__img-container">
-                    <img src="./images/pizza.png" alt="HealthConf " width="160" height="150">
+                    <img src="./images/paw.png" alt=" pets" width="160" height="150">
+
                 </div>
             </div>
         </div>
@@ -115,31 +123,53 @@
             </h3>
         </div>
     </section>
-
+    <div class="line">
+        <div class="main__line"></div>
+    </div>
     <section id="contact" class="contact">
         <div class="contact__item cTitle contact__title-container">
             <h2 class="contact__title">You can find me here!</h2>
         </div>
         <div class="contact__item  contact__mainContact ">
-            <div class="contact__icons">
+         
+            <div class="contact__form">    
+                    <form class="Contactform" action="POST" id="form">
+                       <h3 class="Contactform__title">CONTACT</h3>
+        
+        
+                       <div class="Contactform__left-field field">
+        
+                          <label for="name" class="">NAME</label>
+                          <input type="text" class="input" name="name" id="name">
+        
+                       </div>
+        
+                       <div class="Contactform__right-field field">
+        
+                          <label for="email">EMAIL</label>
+                          <input type="text" class="input" id="email">
+        
+                       </div>
+        
+                       <div class="Contactform__text-area field">
+                          <label for="message">MESSAGE</label>
+                          <textarea class="form-control" id="message" > </textarea>
+                       </div>
+        
+                       <div class="Contactform__submit">
+                          <input type="submit" value="SEND MESSAGE" class="Contactform__submit-submit"
+                             id="submitButton"></input>
+                          <input type="reset" value="RESET" class="Contactform__submit-reset"></input>
+                       </div>
+                    </form>
+            </div>
+               <div class="contact__icons">
                 <a href="https://github.com/belueg" target="_blank"> <i class="fab fa-github contact__icon"></i> </a>
 
                 <a href="https://www.linkedin.com/in/b%C3%A1rbara-bel%C3%A9n-gonz%C3%A1lez-a74639142/" target="_blank">
                     <i class="fab fa-linkedin contact__icon"></i>
                 </a>
                 <a href="mailto:belg9412@gmail.com"> <i class="fas fa-mail-bulk contact__icon"></i></a>
-
-            </div>
-            <div class="contact__form">
-                <form class="contact__form-container">
-                    <h4 class="contact__form-title">Contact Me</h4>
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                    <textarea name="Message..." id="" cols="30" rows="10"></textarea>
-                    <div class="contact__btn-cont">
-                        <button class="project__button">Submit</button>
-                    </div>
-                </form>
 
             </div>
         </div>
